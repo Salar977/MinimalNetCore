@@ -1,0 +1,21 @@
+GET http://localhost:5138/games
+###
+GET http://localhost:5138/games/2
+###
+POST http://localhost:5138/games
+{
+    "name": "Fifa 23",
+    "genre": "Sports",
+    "price": 69.99,
+    "releaseYear": "2022-09-27"
+}
+###
+PUT http://localhost:5138/games/2
+{
+    "name": "Fifa 23",
+    "genre": "Sports",
+    "price": 69.99,
+    "releaseYear": "2022-09-27"
+}
+###
+DELETE http://localhost:5138/games/2
