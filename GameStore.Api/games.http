@@ -1,21 +1,25 @@
 GET http://localhost:5138/games
 ###
-GET http://localhost:5138/games/2
+GET http://localhost:5138/games/4
 ###
 POST http://localhost:5138/games
+Content-Type: application/json
+
 {
-    "name": "Fifa 23",
-    "genre": "Sports",
-    "price": 69.99,
-    "releaseYear": "2022-09-27"
+    "name": "PUBG",
+    "genre": "Shooter",
+    "price": 49.99,
+    "releaseYear": "2013-06-06"
 }
 ###
 PUT http://localhost:5138/games/2
+Content-Type: application/json
+
 {
-    "name": "Fifa 23",
-    "genre": "Sports",
-    "price": 69.99,
-    "releaseYear": "2022-09-27"
+    "name": "Fortnite",
+    "genre": "Shooter",
+    "price": 0,
+    "releaseYear": "2013-06-06"
 }
 ###
-DELETE http://localhost:5138/games/2
+DELETE http://localhost:5138/games/1
