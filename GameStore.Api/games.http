@@ -1,15 +1,15 @@
 GET http://localhost:5138/games
 ###
-GET http://localhost:5138/games/4
+GET http://localhost:5138/games/2
 ###
 POST http://localhost:5138/games
 Content-Type: application/json
 
 {
-    "name": "PUBG",
-    "genre": "Shooter",
+    "name": "Killzone",
+    "genreId": 1,
     "price": 49.99,
-    "releaseYear": "2013-06-06"
+    "releaseDate": "2013-06-06"
 }
 ###
 PUT http://localhost:5138/games/2
@@ -22,4 +22,4 @@ Content-Type: application/json
     "releaseYear": "2013-06-06"
 }
 ###
-DELETE http://localhost:5138/games/1
+DELETE http://localhost:5138/games/2

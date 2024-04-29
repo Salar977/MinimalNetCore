@@ -1,0 +1,5 @@
+GET http://localhost:5138/genres
+
+###
+
+GET http://localhost:5138/genres/5
